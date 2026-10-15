@@ -130,8 +130,7 @@ function renderHeaderActions() {
   const user = getCurrentUser();
   if (!user) {
     return `
-      <a class="button button--quiet" href="login.html">Log in</a>
-      <a class="button button--primary" href="register.html">Join free</a>`;
+      <a class="button button--quiet" href="login.html">Log in</a>`;
   }
   const dashboards = { admin: "admin.html", facilitator: "organizer.html", specialist: "provider.html", owner: "provider.html" };
   const link = dashboards[user.role]
