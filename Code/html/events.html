@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="container page">
+      <p class="eyebrow">Learn and connect</p>
+      <h1>Community events</h1>
+      <p class="lede">Join welcoming workshops, peer gatherings, and specialist talks at your own pace.</p>
+
+      <!-- Search box -->
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Search events by name or topic" aria-label="Search events" />
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Filters -->
+        <aside class="filters">
+          <h3>Filters</h3>
+          <label class="field">
+            <span>Event type</span>
+            <select id="type-filter"><option value="">All event types</option></select>
+          </label>
+          <label class="field">
+            <span>When</span>
+            <select id="date-filter">
+              <option value="upcoming">Upcoming events</option>
+              <option value="all">All published events</option>
+            </select>
+          </label>
+        </aside>
+
+        <!-- Results -->
+        <section>
+          <p class="results-count" id="results-count"></p>
+          <div class="card-grid card-grid--two" id="events-list">
+            <p>Loading events...</p>
+          </div>
+          <p class="form-message" id="page-message" role="status"></p>
+        </section>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/events.js"></script>
+  </body>
+</html>

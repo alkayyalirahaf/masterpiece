@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Spaces - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div id="site-header"></div>
+
+    <main class="container page">
+      <p class="eyebrow">Your community, your space</p>
+      <h1>Community Spaces</h1>
+      <p class="lede">
+        Discover welcoming spaces where people can meet, share experiences, and support each other.
+      </p>
+
+      <!-- Search box -->
+      <div class="toolbar">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search by space name, type, or city..."
+          aria-label="Search community spaces"
+        />
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Filters -->
+        <aside class="filters">
+          <h3>Filters</h3>
+
+          <label class="field">
+            <span>Space type</span>
+            <select id="type-filter">
+              <option value="">All types</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>City</span>
+            <select id="city-filter">
+              <option value="">All cities</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Price</span>
+            <select id="price-filter">
+              <option value="">All spaces</option>
+              <option value="free">Free spaces</option>
+              <option value="paid">Paid spaces</option>
+            </select>
+          </label>
+
+          <button class="button button--quiet" type="button" id="clear-filters">
+            Clear filters
+          </button>
+        </aside>
+
+        <!-- Results -->
+        <section>
+          <div class="section-heading">
+            <h2>Explore spaces</h2>
+            <p class="results-count" id="results-count">Loading spaces...</p>
+          </div>
+
+          <div class="card-grid card-grid--two" id="spaces-list">
+            <p>Loading community spaces...</p>
+          </div>
+
+          <p class="form-message" id="page-message" role="status"></p>
+        </section>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/list-page.js"></script>
+  </body>
+</html>

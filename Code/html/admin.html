@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Left menu (filled by admin.js) -->
+      <aside class="dash-side" id="dash-side"></aside>
+
+      <main class="dash-main">
+        <div class="dash-top">
+          <h1 id="dash-title">Admin</h1>
+          <a class="button button--secondary" href="index.html">View site</a>
+        </div>
+        <div id="dash-content"><p>Loading...</p></div>
+      </main>
+    </div>
+
+    <!-- Details window: shows ALL fields of the row the admin clicked (filled by admin.js) -->
+    <div class="modal" id="details-modal" hidden>
+      <div class="modal-box card">
+        <h2>Details</h2>
+        <dl class="details-list" id="details-list"></dl>
+        <button class="button" id="details-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script type="module" src="../js/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="auth-page">
+    <!-- Left panel: branding + quote -->
+    <section class="auth-side">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">W</span>
+        <span>Wanas</span>
+      </a>
+
+      <div>
+        <p class="eyebrow">Join the circle</p>
+        <h1>A little support can change a lot.</h1>
+        <p>Connect with people who understand, on your terms and at your pace.</p>
+      </div>
+
+      <blockquote>
+        “I joined quietly. When I was ready to speak, people were already there to listen.”
+        <cite>— Community member</cite>
+      </blockquote>
+    </section>
+
+    <!-- Right panel: the registration form (display-only in this demo) -->
+    <section class="auth-main">
+      <form class="auth-form" id="register-form">
+        <h2>Create your account</h2>
+        <p>It is free and takes less than two minutes.</p>
+
+        <label class="field">
+          <span>Display name</span>
+          <input type="text" id="name" placeholder="How you will appear" required />
+        </label>
+
+        <label class="field">
+          <span>Email address</span>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input type="password" id="password" placeholder="At least 6 characters" required />
+        </label>
+
+        <label class="field">
+          <span>I am joining as</span>
+          <select id="role">
+            <option value="member">Member (looking for support)</option>
+            <option value="facilitator">Group organizer (lead a support group)</option>
+            <option value="specialist">Specialist (offering sessions)</option>
+            <option value="owner">Space owner (hosting meetings)</option>
+          </select>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="terms" />
+          <span>I agree to the Terms and Community Guidelines.</span>
+        </label>
+
+        <!-- Demo message (filled by register.js) -->
+        <p class="form-message" id="form-message"></p>
+
+        <button class="button" type="submit">Create account</button>
+        <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+      </form>
+    </section>
+
+<script type="module" src="../js/auth-pages.js"></script>
+  </body>
+</html>

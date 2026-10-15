@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="auth-page">
+    <!-- Left panel: branding + quote -->
+    <section class="auth-side">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">W</span>
+        <span>Wanas</span>
+      </a>
+
+      <div>
+        <p class="eyebrow">Welcome back</p>
+        <h1>Your community is here.</h1>
+        <p>Connect with people who understand, on your terms and at your pace.</p>
+      </div>
+
+      <blockquote>
+        “I joined quietly. When I was ready to speak, people were already there to listen.”
+        <cite>— Community member</cite>
+      </blockquote>
+    </section>
+
+    <!-- Right panel: the login form -->
+    <section class="auth-main">
+      <form class="auth-form" id="login-form">
+        <h2>Log in to your account</h2>
+        <p>Good to see you again.</p>
+
+        <label class="field">
+          <span>Email address</span>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <input type="password" id="password" placeholder="Enter your password" required />
+        </label>
+
+        <!-- Demo accounts hint (inline style kept to match the original design) -->
+        <div class="demo-accounts" style="background:#f3f7f4;padding:12px;border-radius:10px;margin:12px 0;font-size:13px;line-height:1.7">
+          <strong>Demo accounts (password shown below):</strong><br>
+          Admin: alex@example.com / admin123<br>
+          Member: maya@example.com / 123456<br>
+          Facilitator: sara@example.com / 123456<br>
+          Specialist: lena@example.com / 123456<br>
+          Space owner: rana@example.com / 123456
+        </div>
+
+        <!-- Error/success message (filled by login.js) -->
+        <p class="form-message" id="form-message"></p>
+
+        <button class="button" type="submit">Log in</button>
+        <p class="auth-switch">New to Wanas? <a href="register.html">Create an account</a></p>
+      </form>
+    </section>
+
+<script type="module" src="../js/auth-pages.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specialists - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="container page">
+      <p class="eyebrow">Guidance you can trust</p>
+      <h1>Find a specialist</h1>
+      <p class="lede">Explore support providers by specialty and find someone whose experience fits your needs.</p>
+
+      <!-- Search box -->
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Search by name, specialty, or topic" aria-label="Search specialists" />
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Filters -->
+        <aside class="filters">
+          <h3>Filters</h3>
+          <label class="field">
+            <span>Specialty</span>
+            <select id="specialty-filter"><option value="">All specialties</option></select>
+          </label>
+          <label class="field">
+            <span>Availability</span>
+            <select id="availability-filter">
+              <option value="">Any availability</option>
+              <option value="Today">Today</option>
+              <option value="This week">This week</option>
+              <option value="Next week">Next week</option>
+            </select>
+          </label>
+        </aside>
+
+        <!-- Results -->
+        <section>
+          <p class="results-count" id="results-count"></p>
+          <div class="card-grid card-grid--two" id="specialists-list">
+            <p>Loading specialists...</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/list-page.js"></script>
+  </body>
+</html>

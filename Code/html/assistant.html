@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Assistant - Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="container page">
+      <p class="eyebrow">Available any time</p>
+      <h1>Support Assistant</h1>
+      <p class="lede">Tell us a little about what you need and get a personal action plan with groups, specialists and places that fit.</p>
+
+      <!-- Plan form: three questions -->
+      <form class="card form-card plan-form" id="plan-form">
+        <label class="field">
+          <span>What are you going through?</span>
+          <select id="topic" required><option value="">Choose a topic</option></select>
+        </label>
+
+        <label class="field">
+          <span>Where are you?</span>
+          <select id="city"><option value="">Any city</option></select>
+        </label>
+
+        <label class="field">
+          <span>What would help you most?</span>
+          <select id="goal">
+            <option value="people">Talking with people who understand</option>
+            <option value="professional">Guidance from a professional</option>
+            <option value="meet">Meeting people in person</option>
+          </select>
+        </label>
+
+        <button class="button" type="submit">Create my plan</button>
+        <small>This assistant cannot give medical advice or emergency support. In an emergency, contact your local emergency services.</small>
+      </form>
+
+      <!-- Result area (filled by assistant.js) -->
+      <section id="plan-result"></section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="../js/assistant.js"></script>
+  </body>
+</html>

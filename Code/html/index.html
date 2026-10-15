@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Header + Footer are filled by components.js via home.js -->
+    <div id="site-header"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Support starts with connection</p>
+          <h1>You do not have to figure it out alone.</h1>
+          <p class="hero-lede">
+            Find understanding people, practical guidance, and welcoming spaces built around what
+            you are going through.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="groups.html">Find a group</a>
+            <a class="button button--secondary" href="specialists.html">Browse specialists</a>
+          </div>
+          <p class="microcopy">Free to join · Private by default · Moderated spaces</p>
+        </div>
+        <div class="image-placeholder"></div>
+      </section>
+
+      <!-- Stats strip -->
+      <section class="stat-strip" aria-label="Platform overview">
+        <div><strong>60+</strong><span>Support groups</span></div>
+        <div><strong>12k</strong><span>Community members</span></div>
+        <div><strong>45</strong><span>Verified specialists</span></div>
+        <div><strong>24/7</strong><span>AI guidance</span></div>
+      </section>
+
+      <!-- Featured groups (filled by home.js) -->
+      <section class="section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Find your people</p>
+            <h2>Support groups for real life</h2>
+          </div>
+          <a class="button button--secondary" href="groups.html">Browse all groups</a>
+        </div>
+        <div class="card-grid card-grid--three" id="home-groups">
+          <p>Loading groups...</p>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section section--bordered">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <div>
+              <p class="eyebrow">How it works</p>
+              <h2>A simple path to support</h2>
+            </div>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <span>01</span>
+              <h3>Tell us what you need</h3>
+              <p>Search by topic, experience, or the kind of support that feels right.</p>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <h3>Choose your space</h3>
+              <p>Join a peer group, attend an event, or connect with a specialist.</p>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <h3>Go at your pace</h3>
+              <p>Listen quietly, share openly, or return whenever you are ready.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next event (filled by home.js) -->
+      <section class="section container feature-panel">
+        <div>
+          <p class="eyebrow">Coming up</p>
+          <h2>Join an online community event</h2>
+          <p>Learn, listen, and connect in facilitated sessions designed to feel approachable.</p>
+        </div>
+        <div id="home-event"><p>Loading event...</p></div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script type="module" src="../js/home.js"></script>
+  </body>
+</html>
