@@ -1,6 +1,10 @@
 // Shared UI: cards, layout (header/footer), and table rendering.
 import { getCurrentUser, logout } from "./auth.js";
 import { countUnread, initials } from "./helpers.js";
+
+
+const repoName = window.location.pathname.includes('/masterpiece/') ? '/masterpiece' : '';
+
 // ---------- Cards ----------
 
 export function renderGroupCard(group) {
@@ -107,13 +111,14 @@ export function renderSpecialistCard(specialist) {
 // ---------- Layout ----------
 
 const navItems = [
-  { label: "Home", href: "/index.html" },
-  { label: "Groups", href: "/html/groups.html" },
-  { label: "Events", href: "/html/events.html" },
-  { label: "Specialists", href: "/html/specialists.html" },
-  { label: "Community Spaces", href: "/html/spaces.html" },
-  { label: "AI Assistant", href: "/html/assistant.html" },
+  { label: "Home", href: `${repoName}/index.html` },
+  { label: "Groups", href: `${repoName}/html/groups.html` },
+  { label: "Events", href: `${repoName}/html/events.html` },
+  { label: "Specialists", href: `${repoName}/html/specialists.html` },
+  { label: "Community Spaces", href: `${repoName}/html/spaces.html` },
+  { label: "AI Assistant", href: `${repoName}/html/assistant.html` },
 ];
+
 
 const parentPage = {
   "group-details.html": "groups.html",
