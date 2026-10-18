@@ -107,12 +107,12 @@ export function renderSpecialistCard(specialist) {
 // ---------- Layout ----------
 
 const navItems = [
-  { label: "Home", href: "index.html" },
-  { label: "Groups", href: "groups.html" },
-  { label: "Events", href: "events.html" },
-  { label: "Specialists", href: "specialists.html" },
-  { label: "Community Spaces", href: "spaces.html" },
-  { label: "AI Assistant", href: "assistant.html" },
+  { label: "Home", href: "/index.html" },
+  { label: "Groups", href: "/Code/html/groups.html" },
+  { label: "Events", href: "/Code/html/events.html" },
+  { label: "Specialists", href: "/Code/html/specialists.html" },
+  { label: "Community Spaces", href: "/Code/html/spaces.html" },
+  { label: "AI Assistant", href: "/Code/html/assistant.html" },
 ];
 
 const parentPage = {
@@ -122,7 +122,7 @@ const parentPage = {
 };
 
 function currentPage() {
-  const page = location.pathname.split("/").pop() || "index.html";
+  const page = location.pathname.split("/").pop() || "/Code/html/groups.html";
   return parentPage[page] || page;
 }
 
@@ -130,14 +130,24 @@ function renderHeaderActions() {
   const user = getCurrentUser();
   if (!user) {
     return `
-      <a class="button button--quiet" href="login.html">Log in</a>`;
+      <a class="button button--quiet" href="/Code/html/login.html">Log in</a>`;
   }
-  const dashboards = { admin: "admin.html", facilitator: "organizer.html", specialist: "provider.html", owner: "provider.html" };
-  const link = dashboards[user.role]
-    ? `<a class="button button--secondary" href="${dashboards[user.role]}">Dashboard</a>`
-    : `<a class="button button--secondary" href="profile.html">My profile</a>`;
+ 
+
+
+const dashboards = {
+  admin: "/Code/html/admin.html",
+  facilitator: "/Code/html/organizer.html",
+  specialist: "/Code/html/provider.html",
+  owner: "/Code/html/provider.html",
+};
+const link = dashboards[user.role]
+  ? `<a class="button button--secondary" href="${dashboards[user.role]}">Dashboard</a>`
+  : `<a class="button button--secondary" href="/Code/html/profile.html">My profile</a>`;
+
+
   const bell = user.role === "admin" ? ""
-    : `<a class="button button--quiet" href="notifications.html">Notifications <span class="notif-badge" id="notif-count" hidden></span></a>`;
+    : `<a class="button button--quiet" href="/Code/html/notifications.html">Notifications <span class="notif-badge" id="notif-count" hidden></span></a>`;
   return `${bell}${link}<button class="button button--quiet" id="logout-btn" type="button">Log out</button>`;
 }
 
@@ -148,7 +158,7 @@ function renderHeader() {
   ).join("");
   return `
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Wanas home">
+      <a class="brand" href="/index.html" aria-label="Wanas home">
         <span class="brand-mark" aria-hidden="true">W</span><span>Wanas</span>
       </a>
       <nav class="main-nav" aria-label="Main navigation">${links}</nav>
@@ -160,7 +170,7 @@ function renderFooter() {
   return `
     <footer class="site-footer">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
+        <a class="brand brand--footer" href="/Code/html/groups.html"><span class="brand-mark">W</span><span>Wanas</span></a>
         <p>A safer place to find support, share experiences, and feel understood.</p>
       </div>
       <div><strong>Explore</strong><a href="groups.html">Groups</a><a href="events.html">Events</a><a href="specialists.html">Specialists</a></div>

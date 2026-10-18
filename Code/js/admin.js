@@ -170,7 +170,7 @@ if (sectionName !== "overview" && !sections[sectionName]) sectionName = "overvie
 function renderSide() {
   const links = [["overview", "Overview"], ...Object.entries(sections).map(([k, s]) => [k, s.title])];
   side.innerHTML = `
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
+    <a class="brand" href="/index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
     ${links.map(([key, label]) =>
       `<a class="dash-link ${key === sectionName ? "dash-link--active" : ""}" href="admin.html?section=${key}">${label}</a>`
     ).join("")}
