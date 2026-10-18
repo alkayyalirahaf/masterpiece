@@ -5,7 +5,7 @@ import { mountLayout, renderGroupCard, renderEventCard } from "./ui.js";
 
 mountLayout();
 
-// Load groups + events, then fill the two placeholders in index.html.
+// Load groups + events, then fill the two placeholders in ./index.html.
 async function loadHome() {
   const groupsBox = document.getElementById("home-groups");
   const eventBox = document.getElementById("home-event");

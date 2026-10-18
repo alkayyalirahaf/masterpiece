@@ -32,7 +32,7 @@ export function renderEventCard(event) {
         <h3>${event.title}</h3>
         <p>${weekday} · ${event.time} · Online</p>
       </div>
-      <a class="button button--secondary" href="events.html">View details</a>
+      <a class="button button--secondary" href="html/events.html">View details</a>
     </article>`;
 }
 
@@ -122,7 +122,7 @@ const parentPage = {
 };
 
 function currentPage() {
-  const page = location.pathname.split("/").pop() || "/html/groups.html";
+  const page = location.pathname.split("/").pop() || "./html/groups.html";
   return parentPage[page] || page;
 }
 
@@ -130,7 +130,7 @@ function renderHeaderActions() {
   const user = getCurrentUser();
   if (!user) {
     return `
-      <a class="button button--quiet" href="/html/login.html">Log in</a>`;
+      <a class="button button--quiet" href="./html/login.html">Log in</a>`;
   }
  
 
@@ -170,7 +170,7 @@ function renderFooter() {
   return `
     <footer class="site-footer">
       <div class="footer-brand">
-        <a class="brand brand--footer" href="/html/groups.html"><span class="brand-mark">W</span><span>Wanas</span></a>
+        <a class="brand brand--footer" href="./html/groups.html"><span class="brand-mark">W</span><span>Wanas</span></a>
         <p>A safer place to find support, share experiences, and feel understood.</p>
       </div>
       <div><strong>Explore</strong><a href="groups.html">Groups</a><a href="events.html">Events</a><a href="specialists.html">Specialists</a></div>

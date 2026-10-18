@@ -36,7 +36,7 @@ function fillForm(form, values) {
 // ----- Left menu -----
 function renderSide() {
   side.innerHTML = `
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
+    <a class="brand" href="./index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
     <a class="dash-link ${section === "groups" ? "dash-link--active" : ""}" href="organizer.html">My groups</a>
     <a class="dash-link ${section === "events" ? "dash-link--active" : ""}" href="organizer.html?section=events">Events</a>
     <div class="dash-user">

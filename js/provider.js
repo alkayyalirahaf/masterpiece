@@ -38,7 +38,7 @@ function fillForm(form, values) {
 function renderSide() {
   const profileLabel = isSpecialist ? "My profile" : "My spaces";
   side.innerHTML = `
-    <a class="brand" href="index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
+    <a class="brand" href="./index.html"><span class="brand-mark">W</span><span>Wanas</span></a>
     <a class="dash-link ${section === "requests" ? "dash-link--active" : ""}" href="provider.html">Booking requests</a>
     <a class="dash-link ${section === "profile" ? "dash-link--active" : ""}" href="provider.html?section=profile">${profileLabel}</a>
     <div class="dash-user">
