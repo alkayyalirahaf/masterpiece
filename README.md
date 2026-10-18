@@ -1,6 +1,3 @@
-
-
-
 # Wanas (Support Circle) — Frontend Demo
 
 ## 🌱 Overview
@@ -47,7 +44,7 @@ master/
 │   ├── events.js       # Event listing and booking logic
 │   ├── home.js         # Home page rendering
 │   ├── groups.js       # Group listing
-│   ├── ... (other page-specific scripts)
+│   └── ... (other page-specific scripts)
 ├── html/               # All secondary pages
 │   ├── login.html
 │   ├── register.html
@@ -59,9 +56,3 @@ master/
 │   ├── ERD.pdf          # Entity Relationship Diagram
 │   └── SCHEMA.md        # Database documentation
 └── master.pptx         # Project presentation
-
-
-
-
-- **Figma Design:** [Wanas Figma Prototype](https://www.figma.com/make/Gq6N4mb7FJUrGDMxP5zNs0/Support?t=rxKgiYZ9rN7DgiaS-1)
-- **Live Demo:** [Wanas Live Website](https://alkayyalirahaf.github.io/masterpiece/)
