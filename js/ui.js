@@ -135,24 +135,23 @@ function renderHeaderActions() {
   const user = getCurrentUser();
   if (!user) {
     return `
-      <a class="button button--quiet" href="./html/login.html">Log in</a>`;
+      <a class="button button--quiet" href="${repoName}/html/login.html">Log in</a>`;
   }
  
 
 
 const dashboards = {
-  admin: "/html/admin.html",
-  facilitator: "/html/organizer.html",
-  specialist: "/html/provider.html",
-  owner: "/html/provider.html",
+  admin: `${repoName}/html/admin.html`,
+  facilitator: `${repoName}/html/organizer.html`,
+  specialist: `${repoName}/html/provider.html`,
+  owner: `${repoName}/html/provider.html`,
 };
 const link = dashboards[user.role]
   ? `<a class="button button--secondary" href="${dashboards[user.role]}">Dashboard</a>`
-  : `<a class="button button--secondary" href="/html/profile.html">My profile</a>`;
-
+  : `<a class="button button--secondary" href="${repoName}/html/profile.html">My profile</a>`;
 
   const bell = user.role === "admin" ? ""
-    : `<a class="button button--quiet" href="/html/notifications.html">Notifications <span class="notif-badge" id="notif-count" hidden></span></a>`;
+    : `<a class="button button--quiet" href="${repoName}/html/notifications.html">Notifications <span class="notif-badge" id="notif-count" hidden></span></a>`;
   return `${bell}${link}<button class="button button--quiet" id="logout-btn" type="button">Log out</button>`;
 }
 

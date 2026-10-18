@@ -20,7 +20,8 @@ function saveSession(user) {
 // Clear the session and go back to the login page.
 export function logout() {
   sessionStorage.removeItem("currentUser");
-  location.href = "../html/login.html";
+    const repoName = window.location.pathname.includes('/masterpiece/') ? '/masterpiece' : '';
+location.href = `${repoName}/html/login.html`;
 }
 
 // Where to send the user after login, based on their role.
