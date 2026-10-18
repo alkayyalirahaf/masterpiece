@@ -61,6 +61,7 @@ master/
 └── master.pptx         # Project presentation
 
 
-figma link [https://www.figma.com/make/Gq6N4mb7FJUrGDMxP5zNs0/Support?t=rxKgiYZ9rN7DgiaS-1]
 
-live link [https://alkayyalirahaf.github.io/masterpiece/]
+
+- **Figma Design:** [Wanas Figma Prototype](https://www.figma.com/make/Gq6N4mb7FJUrGDMxP5zNs0/Support?t=rxKgiYZ9rN7DgiaS-1)
+- **Live Demo:** [Wanas Live Website](https://alkayyalirahaf.github.io/masterpiece/)
