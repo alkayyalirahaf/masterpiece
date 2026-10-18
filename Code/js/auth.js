@@ -20,14 +20,14 @@ function saveSession(user) {
 // Clear the session and go back to the login page.
 export function logout() {
   sessionStorage.removeItem("currentUser");
-  location.href = "/Code/html/login.html";
+  location.href = "/html/login.html";
 }
 
 // Where to send the user after login, based on their role.
 export function homeFor(role) {
-  if (role === "admin") return "/Code/html/admin.html";
-  if (role === "facilitator") return "/Code/html/organizer.html";
-  if (role === "specialist" || role === "owner") return "/Code/html/provider.html";
+  if (role === "admin") return "/html/admin.html";
+  if (role === "facilitator") return "/html/organizer.html";
+  if (role === "specialist" || role === "owner") return "/html/provider.html";
   return "/index.html"; 
 }
 
